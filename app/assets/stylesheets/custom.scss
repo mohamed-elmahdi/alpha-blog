@@ -1,0 +1,86 @@
+$navbar-light-color:                rgba($red,1);
+@font-face {
+  font-family: "Destain";
+  src: url(destain.ttf) format("truetype");
+}
+@font-face {
+  font-family: "BTR";
+  src: url(BeforeTheRain_personal_use_demo.ttf) format("truetype");
+}
+@import 'bootstrap';
+
+#logo{
+  float: left;
+  font-size: 1.9em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.bg-light{
+  background-color: #a7a7a7 !important;
+}
+
+.center{
+  text-align: center;
+}
+
+.jumbotron{
+  background-image: asset-url('diary-968592_960_720.jpg');
+  background-size: cover;
+  height: 600px;
+}
+
+.jumbotron h1{
+  margin-bottom: 6rem;
+  margin-top: 7rem;
+  color: #eaeaea;
+  font-family: "BTR";
+  
+}
+
+.sign-up{
+  background: transparent;
+  border-color: #b10819;
+  padding: .75rem 2rem;
+}
+
+.sign-up:hover{
+  background-color: #b10819;
+  border-color: #b10819;
+}
+
+.sign-up:focus{
+  box-shadow: none;
+}
+
+.sign-up:active{
+  background: transparent;
+  border-color: #b10819;
+}
+
+footer{
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a:hover{
+  color: #222;
+}
+
+footer small{
+  float: left;
+}
+
+footer ul{
+  float: right;
+  list-style: none;
+}
+
+footer ul li{
+  float: left;
+  margin-left: 15px;
+}

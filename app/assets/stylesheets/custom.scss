@@ -84,3 +84,28 @@ footer ul li{
   float: left;
   margin-left: 15px;
 }
+
+.form-control:focus{
+  border-color: #fdbebe;
+}
+
+label{
+  font-weight: bold;
+  color: #5d5d5d;
+}
+
+.create-btn{
+  margin:2rem 0;
+}
+
+.update-btn{
+  margin:2rem 0;
+}
+
+.create-title{
+  margin-bottom: 2rem;
+}
+
+.edit-title{
+  margin-bottom: 2rem;
+}

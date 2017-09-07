@@ -1,11 +1,11 @@
 $navbar-light-color:                rgba($red,1);
 @font-face {
   font-family: "Destain";
-  src: url(destain.ttf) format("truetype");
+  src: font-url("destain.ttf") format("truetype");
 }
 @font-face {
   font-family: "BTR";
-  src: url(BeforeTheRain_personal_use_demo.ttf) format("truetype");
+  src: font-url("BeforeTheRain_personal_use_demo.ttf") format("truetype");
 }
 @import 'bootstrap';
 
@@ -35,13 +35,16 @@ $navbar-light-color:                rgba($red,1);
 .jumbotron h1{
   margin-bottom: 6rem;
   margin-top: 7rem;
-  color: #eaeaea;
+  color: #fff;
   font-family: "BTR";
+  font-weight: bold;
   
 }
 
 .sign-up{
   background: transparent;
+  color: #b10819;
+  border: 1.5px solid;
   border-color: #b10819;
   padding: .75rem 2rem;
 }

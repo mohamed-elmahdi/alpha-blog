@@ -1,13 +1,3 @@
 <h1 align="center" class="edit-title">Edit existing article</h1>
-<% if @article.errors.any? %>
-    <div class="col-md-8">
-      <div class="alert alert-danger" role="alert">
-        <h3 class="alert-heading">
-          <%= pluralize(@article.errors.count, "error") %> prevented the article from being updated
-        </h3>
-        <%= render 'layouts/errors' %>
-      </div>
-    </div>
-<% end %>
-
+<%= render 'layouts/errors', obj: @article, cname: "article", opType: "edited" %>
 <%= render 'layouts/form' %>

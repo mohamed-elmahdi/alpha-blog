@@ -1,7 +1,18 @@
 <h2 align="center" class="show-title">Title:  <%= @article.title %></h2>
 <div class="col-md-8 ml-md-auto mr-md-auto">
-  <div class="card">
+  <div class="card center">
     <div class="card-body">
+      <% if @article.user %>
+        <div class="card-block">
+          <%= link_to gravatar_for(@article.user), user_path(@article.user), class: "card-img-top" %>
+        </div>
+        <div class="card-block">
+          <%= link_to @article.user.username, user_path(@article.user), class: "card-link font-weight-bold" %>
+        </div>
+        <div class="card-block">
+          <small><%= pluralize(@article.user.articles.count, "article") %></small>
+        </div>
+      <% end %>
       <h4 class="card-title center">
         Description
       </h4>
